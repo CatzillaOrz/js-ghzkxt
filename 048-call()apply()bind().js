@@ -52,8 +52,7 @@ wizard.heal.apply(archer, [20, 50]); // .apply(object, [arg1, arg2])
 
 const healArcher = wizard.heal.bind(archer, 100, 30); // .bind > return a function() , it's like create a dynamic scope bind with `this`
 
-
 /**
  * #apply #call is useful for borrowing methods from an object
- * #bind is useful for us to call functions later on with a certain contain context or certain `this` keyword
+ * #bind is useful for us to call functions later on with a certain  context or certain `this` keyword
  */

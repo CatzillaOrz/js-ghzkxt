@@ -39,3 +39,8 @@ const obj2 = {
 importantPerson() // 'Sunny'
 obj1.importantPerson() // 'Cassy'
 obj1.importantPerson() // 'Jacob'
+
+
+/**
+ * @this => exercise in 047<DynamicScope.js>
+ */

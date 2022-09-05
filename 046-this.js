@@ -21,7 +21,7 @@ const obj = {
  */
 
 function importantPerson(){
-  console.log(this.name +. this.name + '!');
+  console.log(this.name + this.name + '!');
 }
 
 const name = 'Sunny'

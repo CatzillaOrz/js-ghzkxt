@@ -30,4 +30,4 @@ b.say(); // {object b}
 c.say(); // [ƒ]
 c.say()(); // {Window} because of dynamically scoped this.
 d.say(); // [ƒ]
-d.say()(); //
+d.say()(); // {object d}

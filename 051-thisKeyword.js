@@ -27,5 +27,7 @@ var d = {
 
 // #1
 b.say(); // {object b}
+c.say(); // [ƒ]
 c.say()(); // {Window} because of dynamically scoped this.
-d.say()(); // undefined
+d.say(); // [ƒ]
+d.say()(); //

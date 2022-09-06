@@ -62,3 +62,25 @@ const makeNuclearButton = () => {
         totalPeaceTime: totalPleaceTime,
     };
 };
+
+// #4 initialize
+
+let view;
+function initialize() {
+    let called = 0;
+    return function () {
+        if (called > 0) {
+            return;
+            j;
+        } else {
+            view = 'Sunshine and beach';
+            called++;
+            console.log('view has been set!');
+        }
+    };
+}
+const startOnce = initialize();
+startOnce();
+startOnce();
+startOnce();
+console.log(view);

@@ -46,8 +46,6 @@ getIndexValue(299);
 
 // log:
 // 'created Again!'
-// 'created Again!'
-// 'created Again!'
 
 // #3 Encapsulatin
 const makeNuclearButton = () => {

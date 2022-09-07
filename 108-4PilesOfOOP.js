@@ -1,5 +1,5 @@
 /**
- * @description 4 piles of oop
+ * @description 4 piles of oop | 4 Principles of OOP
  * #1 encapsulation
  * #2 abstration
  * #3 inheritance

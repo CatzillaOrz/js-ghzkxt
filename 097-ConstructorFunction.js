@@ -1,7 +1,9 @@
 // Constructor Functions #1
 function Elf(name, weapon) {
+    console.log(this); // Elf{}
     this.name = name;
     this.wapon = weapon;
+    console.log(this); //Elf {name: 'Peter', wapon: 'stones'}
 }
 
 const peter = new Elf('Peter', 'stones');

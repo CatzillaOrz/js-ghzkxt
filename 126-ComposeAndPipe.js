@@ -11,3 +11,12 @@ multiplyBy3AndAbsolute(-50);
 
 // log:
 // = > 150
+// pipe
+/**
+ * @description pipe: kind of like a reverse of @compose
+ */
+
+// #1
+fn1(fn2(fn3(50)));
+compose(fn1, fn2, fn3)(50);
+pipe(fn3, fn2, fn1)(50);

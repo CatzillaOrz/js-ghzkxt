@@ -29,9 +29,21 @@ class HashTable {
         } //O(1)
         return currentBucket;
     }
+
+    keys() {
+        const keysArray = [];
+        for (let i = 0; i < this.data.length; i++) {
+            if (this.data[i]) {
+                keysArray.push(this.data[i][0][0]);
+            }
+        }
+        return keysArray;
+    }
 }
 
-const myHashTable = new HashTable(2);
+// const myHashTable = new HashTable(2); // Only used to make collision
+const myHashTable = new HashTable(50);
 myHashTable.set('grapes', 10000);
 myHashTable.set('apples', 54);
 console.log(myHashTable.get('apples'));
+console.log(myHashTable.keys());

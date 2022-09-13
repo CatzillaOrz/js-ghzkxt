@@ -9,7 +9,7 @@ class HashTable {
             hash = (hash + key.charCodeAt(i) * i) % this.data.length;
         }
         return hash;
-    }
+    } //O(1)
 
     set(key, value) {
         let address = this._hash(key);
@@ -17,7 +17,7 @@ class HashTable {
             this.data[address] = [];
         }
         this.data[address].push([key, value]);
-    }
+    } //O(1)
 
     get(key) {
         let address = this._hash(key);
@@ -26,7 +26,7 @@ class HashTable {
             for (let i = 0; i < currentBucket.length; i++) {
                 if (currentBucket[i][0] === key) return currentBucket[i][1];
             }
-        }
+        } //O(1)
         return currentBucket;
     }
 }
